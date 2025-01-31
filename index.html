@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
+
+    <!-- tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Hamburger Menu icon link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'light-offwhite': '#EFEBE3',
+        }
+      }
+    }
+  }
+
+    </script>
+
+
+
 </head>
+
 <body>
-    <header></header>
+    <header class="bg-gradient-to-t from-light-offwhite">
+        <!-- Navbar section  -->
+        <nav>
+
+            <!-- conatainer  -->
+            <div>
+                <!-- mobile screen content  -->
+                <div class="flex flex-row justify-between mx-auto max-w-sm sm:hidden mt-2 px-1">
+                    <!-- mobile screen logo  -->
+                    <div>
+                        <img src="./c2-assets/mslogo.png" alt="">
+                    </div>
+
+                    <!-- hamburger menu  -->
+                    <div>
+                        <i class="fas fa-bars text-3xl mt-2"></i>
+                    </div>
+                </div>
+
+                <!-- original content  -->
+                <div class="hidden sm:block">
+                    <!-- header logo  -->
+                    <div></div>
+
+                    <!-- menu  -->
+                    <div></div>
+
+                    <!-- search-cart-icon-login-register-button  -->
+                    <div>
+                        <!-- search -->
+                        <div>
+
+                        </div>
+                        <!-- cart -->
+                        <div>
+
+                        </div>
+                        <!-- login -->
+                        <div>
+
+                        </div>
+                        <!-- register -->
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- hero section  -->
+         <div class="flex flex-col justify-center items-center my-16">
+            <h1 class="font-bold text-xl sm:text-3xl text-center">Freshness <span class="text-green-700"> You Can <br>
+                Count</span> On, Prices You’ll Love!</h1>
+            <p class="text-xs sm:text-sm sm:p-4 text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+
+            <!-- hero photo  -->
+            <div>
+                <img src="./c2-assets/hero-vegetables.png" alt="">
+            </div>
+         </div>
+    </header>
     <main></main>
     <footer></footer>
 </body>
+
 </html>
