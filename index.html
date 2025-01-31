@@ -17,14 +17,14 @@
 
     <script>
         tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          'light-offwhite': '#EFEBE3',
+            theme: {
+                extend: {
+                    colors: {
+                        'light-offwhite': '#EFEBE3',
+                    }
+                }
+            }
         }
-      }
-    }
-  }
 
     </script>
 
@@ -98,36 +98,68 @@
         </nav>
 
         <!-- hero section  -->
-         <div class="flex flex-col justify-center items-center my-16">
+        <div class="flex flex-col justify-center items-center my-16">
             <h1 class="font-bold text-xl sm:text-3xl text-center">Freshness <span class="text-green-700"> You Can <br>
-                Count</span> On, Prices You’ll Love!</h1>
-            <p class="text-xs sm:text-sm sm:p-4 text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+                    Count</span> On, Prices You’ll Love!</h1>
+            <p class="text-xs sm:text-sm sm:p-4 text-center">Shop your daily essentials at unbeatable prices. From fresh
+                produce to pantry <br> staples, we’ve got you covered every day!</p>
 
             <!-- hero photo  -->
             <div>
                 <img src="./c2-assets/hero-vegetables.png" alt="">
             </div>
-         </div>
+        </div>
     </header>
 
     <main>
-         <!-- Service section  -->
-        <div class="px-1 md:px-16 lg:px-32">           
-         <h1 class="text-green-600 font-bold text-xl">Services</h1>
+        <!-- Service section  -->
+        <div class="flex justify-center">
+            <div class="px-1 md:px-16 lg:px-32 mb-16">
+                <h1 class="text-green-600 font-bold text-xl my-4">Services</h1>
 
-         <!-- cards -->
-         <div>
-            <div class="h-80 w-80 bg-light-offwhite">
-                <!-- avatar sec  -->
-                 <div class="avatar">
-                    <div class="w-32 rounded-full bg-white">
-                        <img class="w-24 h-24" src="./c2-assets/service.png" alt="">
-                     </div>
-                 </div>
+                <!-- cards -->
+                <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 lg:grid-cols-3 md:gap-2 lg:gap-4">
+                    <div class="h-80 w-96 bg-light-offwhite rounded-xl flex justify-center items-center p-4">
+                        <!-- avatar sec  -->
+                        <div>
+                            <div class="w-32 h-32 bg-white flex justify-center items-center rounded-full mx-auto">
+                                <img src="./c2-assets/service.png" alt="">
+                            </div>
+                            <h1 class="text-center font-bold text-xl px-4 pt-2">24/7 Services </h1>
+                            <p class="text-center text-slate-600 p-4">We are available to help you out whenever you ask
+                                for.
+                                Just let us know.</p>
+                        </div>
+                    </div>
+                    <div class="h-80 w-96 bg-light-offwhite rounded-xl flex justify-center items-center p-4">
+                        <!-- avatar sec  -->
+                        <div>
+                            <div class="w-32 h-32 bg-white flex justify-center items-center rounded-full mx-auto">
+                                <img src="./c2-assets/delivery.png" alt="">
+                            </div>
+                            <h1 class="text-center font-bold text-xl px-4 pt-2">Fast Delivery </h1>
+                            <p class="text-center text-slate-600 p-4">We offer delivery service.Intercity intracity
+                                across
+                                the whole country.</p>
+                        </div>
+                    </div>
+                    <div class="h-80 w-96 bg-light-offwhite rounded-xl flex justify-center items-center p-4">
+                        <!-- avatar sec  -->
+                        <div>
+                            <div class="w-32 h-32 bg-white flex justify-center items-center rounded-full mx-auto">
+                                <img src="./c2-assets/healthy.png" alt="">
+                            </div>
+                            <h1 class="text-center font-bold text-xl px-4 pt-2">Healthy Products</h1>
+                            <p class="text-center text-slate-600 p-4">We are commited to provide premeum quality healthy
+                                product</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div></div>
-            <div></div>
-         </div>
+        </div>
+
+        <!-- product suggestion section -->
+        <div>
 
         </div>
     </main>
