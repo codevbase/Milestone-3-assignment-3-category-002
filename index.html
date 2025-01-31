@@ -9,6 +9,9 @@
     <!-- tailwind css CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- daisyUI CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
     <!-- Hamburger Menu icon link -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
@@ -35,12 +38,12 @@
         <nav>
 
             <!-- conatainer  -->
-            <div>
+            <div class="container">
                 <!-- mobile screen content  -->
                 <div class="flex flex-row justify-between mx-auto max-w-sm sm:hidden mt-2 px-1">
                     <!-- mobile screen logo  -->
                     <div>
-                        <img src="./c2-assets/mslogo.png" alt="">
+                        <a href="#nature-platter"><img src="./c2-assets/mslogo.png" alt=""></a>
                     </div>
 
                     <!-- hamburger menu  -->
@@ -50,29 +53,42 @@
                 </div>
 
                 <!-- original content  -->
-                <div class="hidden sm:block">
+                <div class=" hidden sm:flex mt-8 sm:px-8 md:px-16 lg:px-32 justify-between items-center">
                     <!-- header logo  -->
-                    <div></div>
+                    <div>
+                        <a href="#natur-platter"><img src="./c2-assets/logo-header.png" alt="headerlogo"></a>
+                    </div>
 
                     <!-- menu  -->
-                    <div></div>
+                    <div>
+                        <ul class="flex flex-row gap-2 sm:text-sm md:text-lg">
+                            <li class="hover:text-blue-700"><a href="#product">Product</a></li>
+                            <li class="hover:text-blue-700"><a href="#services">Services</a></li>
+                            <li class="hover:text-blue-700"><a href="#contact-us">Contact us</a></li>
+                        </ul>
+                    </div>
 
                     <!-- search-cart-icon-login-register-button  -->
-                    <div>
+                    <div class="flex flex-row sm:gap-1 md:gap-2 lg:gap-4 items-center">
                         <!-- search -->
                         <div>
-
+                            <i class="fas fa-search text-2xl"></i>
                         </div>
+
                         <!-- cart -->
                         <div>
-
+                            <i class="fas fa-shopping-cart text-2xl"></i>
                         </div>
+
                         <!-- login -->
                         <div>
+                            <button class="btn btn-outline border-green-500">LogIn</button>
 
                         </div>
+
                         <!-- register -->
                         <div>
+                            <button class="btn bg-green-700 text-white">Register</button>
 
                         </div>
                     </div>
