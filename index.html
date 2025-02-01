@@ -385,7 +385,7 @@
             <div class="flex justify-center">
                 <div class="flex flex-col mx-4 gap-4 mt-8">
                     <h1 class="text-[#115414] font-bold text-2xl">Arrival & Offer</h1>
-                    <div class="flex flex-col lg:flex-row gap-4 mb-72 lg:w-[80vw]">
+                    <div class="flex flex-col lg:flex-row gap-4 mb-64 lg:mb-40 lg:w-[80vw]">
                         <!-- dawat card  -->
                         <div
                             class="flex flex-row justify-between w-80 h-48 lg:w-[60vw] bg-[#115414] rounded-3xl py-4 pl-4 lg:pr-12 lg:pl-20">
@@ -445,8 +445,8 @@
         </section>
 
         <!-- subcription section  -->
-        <section>
-            <div class="bg-light-offwhite flex justify-center w-80 lg:w-[80vw] mx-auto rounded-3xl">
+        <section class="relative">
+            <div class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 bg-light-offwhite flex justify-center w-80 lg:w-[80vw] mx-auto rounded-3xl pb-8">
                 <div class="flex flex-col items-center lg:flex-row lg:w-[80vw] lg:justify-around">
                     <!-- basket image -->
                     <div>
@@ -457,11 +457,13 @@
                     <div class="flex md:items-center">
                         <div class="flex flex-col justify-center md:justify-start  gap-4">
                             <h1 class="text-green-700 text-xl font-bold text-center md:text-left">Get Grocery News!</h1>
-                            <p class="text-center md:text-left">Exclusive training tips, ticks, product <br> deals and more.</p>
+                            <p class="text-center md:text-left">Exclusive training tips, ticks, product <br> deals and
+                                more.</p>
                             <div class="flex flex-col justify-center gap-4">
                                 <input type="email" name="email" id="email" placeholder="Enter email..."
                                     class="w-75 h-12 rounded-lg pl-8">
-                                <button class="btn bg-green-700 text-white w-32 self-center md:self-start">Subscribe</button>
+                                <button
+                                    class="btn bg-green-700 text-white w-32 self-center md:self-start">Subscribe</button>
                             </div>
                         </div>
                     </div>
@@ -471,7 +473,44 @@
         </section>
 
     </main>
-    <footer></footer>
+    <footer class="bg-[#179800] w-full">
+        <div class="">
+            <div class="flex flex-col lg:justify-around lg:flex-row lg:items-end lg:pb-16 gap-6 h-screen lg:h-[60vh] pt-72 pb-8">
+                <!-- logo-lext  -->
+                <div class="flex flex-col space-y-4">
+                    <div>
+                        <img src="./c2-assets/logo-footer.png" alt="">
+                    </div>
+                    <p class="text-white">Discover a world of treats, toys and <br>
+                        <span>essentials handpicked for your furry <br>
+                        </span>friends
+                    </p>
+                </div>
+
+                <!-- links -->
+                <div>
+                    <ul class="text-white flex flex-col space-y-4">
+                        <li><a href="#Product">Product</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Contact us">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- social sites  -->
+                <div class="flex flex-col space-y-2">
+                    <p class="text-white">Follow us</p>
+
+                    <div class="flex space-x-4 text-2xl">
+                        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                      </div>
+                      
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
