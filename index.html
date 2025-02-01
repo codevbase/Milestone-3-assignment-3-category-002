@@ -15,6 +15,18 @@
     <!-- Hamburger Menu icon link -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+
+    <!-- font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        .sora-font{
+            font-family: "Sora", serif;
+        }
+    </style>
+
     <script>
         tailwind.config = {
             theme: {
@@ -22,6 +34,7 @@
                     colors: {
                         'light-offwhite': '#EFEBE3',
                     }
+                    
                 }
             }
         }
@@ -32,7 +45,7 @@
 
 </head>
 
-<body>
+<body class="sora-font">
     <header class="bg-gradient-to-t from-light-offwhite">
         <!-- Navbar section  -->
         <nav>
@@ -159,7 +172,7 @@
         </div>
 
         <!-- product suggestion section -->
-        <div class="bg-light-offwhite w-full h-fit mb-8 py-16 flex justify-center lg:ml-4">
+        <div class="bg-light-offwhite w-full h-fit mb-8 py-16 flex justify-center lg:ml-4 lg:mr-4">
 
             <!-- content display -->
             <div class="flex flex-col gap-y-4 lg:w-[80vw] w-80">
@@ -379,6 +392,23 @@
             </div>
         </div>
 
+
+        <!-- gallery section  -->
+        <section class="lg:ml-4 py-12 bg-light-offwhite flex justify-center">
+            <div class="container mx-auto text-center flex flex-col w-full">
+                <h2 class="text-2xl font-bold text-green-800 mb-6">From our own farms ...</h2>
+        
+                <div class="flex justify-center">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+                        <img src="./c2-assets/img1.jpg" class="rounded-lg shadow-md hover:scale-105 transition duration-300 w-80 h-72">
+                        <img src="./c2-assets/img2.jpg" class="rounded-lg shadow-md hover:scale-105 transition duration-300 w-80 h-72">
+                        <img src="./c2-assets/img3.jpg" class="rounded-lg shadow-md hover:scale-105 transition duration-300 w-80 h-72">
+                        <!-- <img src="./c2-assets/img3.jpg" class="rounded-lg shadow-md hover:scale-105 transition duration-300 w-80 h-72"> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
         <!-- arrival & offer section  -->
         <section>
